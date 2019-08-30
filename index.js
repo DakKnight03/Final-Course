@@ -32,11 +32,7 @@ $("#submit").click(function(e) {
 			numPoint = 20;
 			console.log(numPoint);
 		}
-		// localStorage.point = point;
-		// console.log(point);
-		// if (Number(point) > 20) {
-		// 	localStorage.setItem("point", "20");
-		// }
+
 		window.open("personality.html");
 		localStorage.setItem('point', numPoint)
 	})
@@ -53,7 +49,9 @@ let bonus = 0;
 let button = document.getElementsByClassName("button");
 for (i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function(e) {
-        e.preventDefault();
+		e.preventDefault();
+		e.target.style.backgroundColor = "lightcoral";
+		e.target.style.borderColor = "lightcoral";
         let getAtt = e.target.getAttribute("att");
 		console.log(getAtt);
         if (getAtt == "good") {
