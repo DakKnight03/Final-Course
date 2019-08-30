@@ -1,0 +1,156 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+}
+
+.name {
+    border-radius: 5px;
+    border: 1px gray solid;
+    padding: 3px;
+    margin-bottom: 0;
+    justify-items: self-start;
+    border: white 1px solid;
+    width: 75%;
+    height: 50px;
+    font-size: 28px;
+    margin: 0 35px 0 35px;
+}
+
+.landing {
+    /* text-align: center; */
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.title {
+    font-size: 32px;
+    justify-content: center;
+    justify-items: start;
+    text-align: center;
+
+    /* background-color: lightcoral; */
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-size: 48px;
+    border-radius: 5px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: lightseagreen;
+    color: black;
+}
+
+#container {
+    padding-bottom: 24px;
+    color: white;
+    /* background-color: lightcoral; */
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+#submit {
+    font-size: 32px;
+    background-color: #410B13;
+    margin-bottom: 20px;
+    color: #ED6A5A;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    border: #410B13;
+}
+
+#submit a :hover {
+    color: white;
+}
+
+#finish {
+    font-size: 32px;
+    background-color: #410B13;
+    margin-bottom: 20px;
+    color: #ED6A5A;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    border: #410B13;
+}
+
+#finish :hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#link {
+    color: black;
+    /* text-decoration: none; */
+}
+
+.button {
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    padding: 0;
+    margin: 10px 35px 5px 0;
+    border: white solid;
+    border-radius: 5px;
+    background-color: white;
+    text-align: start;
+    
+}
+
+.bottom {
+    margin-bottom: 35px;
+}
+
+li {
+    font-size: 24px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    color: #410B13
+}
