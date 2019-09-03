@@ -46,6 +46,8 @@ console.log(numPoint);
 
 let bonus = 0;
 
+// personality test buttons
+
 let button = document.getElementsByClassName("button");
 for (i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function(e) {
@@ -54,6 +56,14 @@ for (i = 0; i < button.length; i++) {
 		e.target.style.borderColor = "lightcoral";
         let getAtt = e.target.getAttribute("att");
 		console.log(getAtt);
+		
+		let parent = e.target.parentNode;
+		let buttons = parent.getElementsByTagName("button");
+		for (i = 0; i < buttons.length; i++) {
+			buttons[i].disabled = true;
+		}
+
+
         if (getAtt == "good") {
 			bonus += 8;
         } else if (getAtt == "avg") {
