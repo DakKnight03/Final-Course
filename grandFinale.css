@@ -8,10 +8,8 @@ html, body {
   background: #C6FFDD;  
   background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
   background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
-  height: 100%;
  
 }
-
 #landing {
   /* background-repeat: no-repeat;
   background-size: cover;
@@ -22,8 +20,8 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
+  margin: 0 35px 0 35px;
+  height: 180%;
 }
 #word {
   font-size: 100px;
@@ -46,7 +44,7 @@ html, body {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 3000px, 0);
   }
 
   60% {
@@ -67,7 +65,7 @@ html, body {
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 10, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -93,14 +91,14 @@ html, body {
 
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
+    -webkit-transform: translate3d(0, 300px, 0);
     transform: translate3d(0, 300px, 0);
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, 70px, 0);
+    transform: translate3d(0, -20px, 0);
   }
 
   75% {
@@ -141,7 +139,7 @@ html, body {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 300px, 0);
+    transform: translate3d(0, 3000px, 0);
   }
 
   60% {
@@ -171,9 +169,6 @@ html, body {
   border: #f7797d;
   height: 60px;
   border-radius: 5px;
-  /* -webkit-box-shadow: 4px 2px 5px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 2px 5px -4px rgba(0,0,0,0.75);
-  box-shadow: 4px 2px 5px -4px rgba(0,0,0,0.75); */
   margin-top: 5px;
   
 
@@ -217,8 +212,24 @@ button a:hover {
   }
 }
 
+header {
+  display: flex;
+  background-color: white;
+  padding: 24px;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  justify-content: space-between;
+}
 
+.nav {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
 
+}
 
-
-
+.nav :hover {
+  color: #410B13;
+}

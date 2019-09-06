@@ -15,6 +15,8 @@
         <div class="title">
             <h1>Love Calculator</h1>
             <h2>Personality Test</h2>
+            <h1 class="red">PLEASE READ THE ANSWERS CAREFULLY</h1>
+            <H2 class="red">you can only choose once. Just like life.</H2>
         </div>
 
         <div id="form">
@@ -24,13 +26,20 @@
 
                     <li>What color do you like?</li>
                     <div id="bud">
+                        <button class="button bottom" att="bad">Pure white.</button>
+                        <button class="button bottom" att="good">Rose pink.</button>
+                        <button class="button bottom" att="bad">Sky blue.</button>
+                        <button class="button bottom" att="avg">Deep purple.</button>
+                        <button class="button bottom" att="avg">Bloody red</button>
+                        <button class="button bottom" att="bad">Darkest black.</button>
+                    </div>
 
-                        <button class="button" att="bad">Pure white.</button>
-                        <button class="button" att="good">Rose pink.</button>
-                        <button class="button" att="bad">Sky blue.</button>
-                        <button class="button" att="avg">Deep purple.</button>
-                        <button class="button" att="avg">Bloody red</button>
-                        <button class="button" att="bad">Darkest black.</button>
+                    <li>Do you and your partner often fall out with each other?</li>
+                    <div>
+
+                        <button class="button" att="avg">Sometimes.</button><br>
+                        <button class="button" att="good">Very rarely.</button><br>
+                        <button class="button bottom" att="bad">Daily.</button><br>
 
                     </div>
 
@@ -43,12 +52,12 @@
 
                     </div>
 
-                    <li>Do you often do housework with your partner?</li>
+                    <li att="unim">Do you often do housework with your partner?</li>
                     <div>
 
                         <button class="button" att="bad">He/she does all the work.</button><br>
-                        <button class="button" att="avg">We share the work.</button><br>
-                        <button class="button bottom" att="good">Everyday's household work is a date for me.</button><br>
+                        <button class="button" att="bad">We share the work.</button><br>
+                        <button class="button bottom" att="bad">Everyday's household work is a date for me.</button><br>
 
                     </div>
 
@@ -61,21 +70,39 @@
 
                     </div>
 
-                    <li>Do you want to spend your time with him/her?</li>
+                    <li att="unim">Do you want to spend your time with him/her?</li>
                     <div>
 
-                        <button class="button" att="good">Of course, we do everything together.</button><br>
+                        <button class="button" att="bad">Of course, we do everything together.</button><br>
                         <button class="button" att="bad">No, she/he is somewhat troublesome to me.</button><br>
-                        <button class="button bottom" att="avg">Most of the time. Sometimes I want to spend time for myself.</button><br>
+                        <button class="button bottom" att="bad">Most of the time. Sometimes I want to spend time for myself.</button><br>
 
                     </div>
 
-                    <li>How often would you take him/her on a date?</li>
+                    <li>Does he/she notice when you are sad?</li>
+                    <div>
+
+                        <button class="button" att="good">Of course yes.</button><br>
+                        <button class="button" att="bad">No, he/she is not aware of it.</button><br>
+                        <button class="button bottom" att="avg">Sometimes.</button><br>
+
+                    </div>
+
+                    <li>What does he/she do when noticed that you are sad?</li>
+                    <div>
+
+                        <button class="button" att="good">"Shhhh, everything is going to be okay."</button><br>
+                        <button class="button" att="bad">"Come on, cheer up okay? This isn't worth being sad."</button><br>
+                        <button class="button bottom" att="avg">Ignore me.</button><br>
+
+                    </div>
+
+                    <li att="unim">How often would you take him/her on a date?</li>
                     <div>
 
                         <button class="button" att="bad">Once in a blue moon.</button><br>
-                        <button class="button" att="good">We go out nearly everyday.</button><br>
-                        <button class="button bottom" att="avg">Usually at weekends, when we have spare time.</button><br>
+                        <button class="button" att="bad">We go out nearly everyday.</button><br>
+                        <button class="button bottom" att="bad">Usually at weekends, when we have spare time.</button><br>
 
                     </div>
 
@@ -88,31 +115,40 @@
 
                     </div>
 
-                    <li>Would you try to hold him/her back when he/she wants to break up?</li>
+                    <li att="unim">Would you try to hold him/her back when he/she wants to break up?</li>
                     <div>
 
-                        <button class="button" att="good">Yes, of course, I still want our relationship to continue.</button><br>
+                        <button class="button" att="bad">Yes, of course, I still want our relationship to continue.</button><br>
                         <button class="button" att="bad">No, I respect his/her opinion. If he/she wants so, let it be.</button><br>
-                        <button class="button bottom" att="avg">I'm not sure, I both want to let him/her go, but I also want him/her to be mine.</button><br>
+                        <button class="button bottom" att="bad">I'm not sure...</button><br>
 
                     </div>
 
                     <li>Do you miss him/her when he/she is not around?</li>
                     <div>
-
+                        
                         <button class="button" att="bad">I tends to forget about her until she came back.</button><br>
                         <button class="button" att="avg">I pull through just fine, but sometimes I DO kind of miss her actually.</button><br>
                         <button class="button bottom" att="good">I am miserable when she is away.</button><br>
-
+                        
                     </div>
 
-                    <li>What is he/she to you?</li>
+                    <li>Are you excited about this relationship?</li>
                     <div>
 
+                        <button class="button" att="bad">Seems ok I guess.</button><br>
+                        <button class="button" att="avg">Very excited indeed.</button><br>
+                        <button class="button bottom" att="good">I will forever treasure it.</button><br>
+
+                    </div>                    
+                    
+                    <li>What is he/she to you?</li>
+                    <div>
+                        
                         <button class="button" att="good">Everything, he/she is my whole world.</button><br>
                         <button class="button" att="avg">He/she is just my boy/girlfriend, nothing else.</button><br>
                         <button class="button bottom" att="bad">I treat him/her the way I treat every one of my friend.</button><br>
-
+                        
                     </div>
 
                 </ol>

@@ -19,6 +19,7 @@ html {
     height: 50px;
     font-size: 28px;
     margin: 0 35px 0 35px;
+    box-shadow: black 2px 2px;
 }
 
 .landing {
@@ -131,9 +132,10 @@ a {
     margin: 10px 35px 5px 0;
     border: white solid;
     border-radius: 5px;
-    background-color: white;
-    text-align: start;
     
+    text-align: start;
+    background-color: white;
+    box-shadow: black 2px 2px;
 }
 
 .bottom {
@@ -153,4 +155,43 @@ li {
     font-size: 72px;
     font-family: 'Montserrat', sans-serif;
     color: #410B13
+}
+
+.red {
+    font-size: 32px;
+    color: darkred;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    padding: 24px;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    justify-content: space-between;
+    position: absolute 0;
+}
+
+.nav {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.nav :hover {
+    color: #410B13;
+}
+
+#retake {
+    text-decoration: none;
+    color: lightblue;
+}
+
+img {
+    width: 120px;
+    height: auto;
 }
