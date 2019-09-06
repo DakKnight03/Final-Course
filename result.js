@@ -19,7 +19,11 @@ if (Number(result) < 90) {
     })
 }
 
-let delOnClose = document.getElementsByTagName("body");
-delOnClose.addEventListener("close", function(e) {
+let retake = document.getElementById("retake");
+retake.addEventListener("click", function(e) {
+    localStorage.clear();
+})
+
+$(window).unload(function() {
     localStorage.clear();
 })
