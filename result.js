@@ -19,12 +19,7 @@ if (Number(result) < 90) {
     })
 }
 
-let retake = document.getElementById("retake");
-retake.addEventListener("click", function(e) {
-    localStorage.clear();
-})
-
-let delOnLoad = document.getElementById("result");
-delOnLoad.addEventListener("load", function(e) {
+let delOnClose = document.getElementsByTagName("body");
+delOnClose.addEventListener("close", function(e) {
     localStorage.clear();
 })
