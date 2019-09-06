@@ -23,3 +23,8 @@ let retake = document.getElementById("retake");
 retake.addEventListener("click", function(e) {
     localStorage.clear();
 })
+
+let delOnLoad = document.getElementById("result");
+delOnLoad.addEventListener("load", function(e) {
+    localStorage.clear();
+})
