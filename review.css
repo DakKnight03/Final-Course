@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+
+
+.banner {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    background-color: teal;
+}
+
+.wrapper {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(109, 212, 247);
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    
+}
+
+.hotel {
+    margin-top: 0;
+    padding: 0;
+    width: 400px;
+    margin: 50px; 
+
+    
+    
+}   
+
+.hotels {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    background-color:white;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.review {
+    margin: 50px;
+    font-size: 18px;
+}
+
+#click {
+    text-decoration: none;
+    color: black;   
+}
+
+.description {
+    display: inline;
+    align-items: left; 
+}
+
