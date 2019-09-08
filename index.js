@@ -29,7 +29,7 @@ $("#button").click(function(e) {
 	} else if (name2 == undefined){
 		$("#name2").css("borderColor", "red")
 
-	} else if (age == undefined){
+	} else if (age == undefined || isNaN(age)){
 		$("#age").css("borderColor", "red")
 
 	} else {
@@ -54,7 +54,7 @@ $("#button").click(function(e) {
 		}
 	});	
 	setTimeout(() => {
-		window.open("personality.html");
+		window.location.href = "personality.html";
 		$("#loading").hide();
 	}, 1500)
 	
@@ -105,6 +105,6 @@ $("#finish").click(function() {
 	console.log(bonus);
 	console.log(localStorage.getItem('point'));
 	localStorage.setItem("result", (bonus + Number(localStorage.getItem('point'))));
-	window.open("result.html");
+	window.location.href = "result.html";
 })
 
