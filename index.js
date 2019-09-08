@@ -1,20 +1,40 @@
 let point;
-let name1, name2;
-name1 = $("#name1").val()
-name2 = $("#name2").val()
-$("#name1").change(e=>{
+let name1, name2, age;
+$("#loading").hide();
+$("#name1").change(e => {
 	name1 = e.target.value;
-})
-$("#name2").change(e=>{
-	name2 = e.target.value;
-})
-console.log(name1, name2)
+	$("#loading").hide();
 
+})
+$("#name2").change(e => {
+	name2 = e.target.value;
+	$("#loading").hide();
+
+})
+$("#age").change(e => {
+	age = e.target.value;
+	$("#loading").hide();
+
+})
+
+console.log(name1, name2, age)
 let numPoint = 0;
 
-$("#submit").click(function(e) {
+$("#button").click(function(e) {	
 	e.preventDefault();
-	$.ajax({
+	$("#loading").show();
+
+	if(name1 == undefined){
+		$("#name1").css("borderColor", "red")
+	} else if (name2 == undefined){
+		$("#name2").css("borderColor", "red")
+
+	} else if (age == undefined){
+		$("#age").css("borderColor", "red")
+
+	} else {
+		console.log("a")
+		$.ajax({
 		"async": true,
 		"crossDomain" : true,
 		"url" : `https://love-calculator.p.rapidapi.com/getPercentage?fname=${name1}&sname=${name2}`,
@@ -32,11 +52,18 @@ $("#submit").click(function(e) {
 			numPoint = 20;
 			console.log(numPoint);
 		}
-
+	});	
+	setTimeout(() => {
 		window.open("personality.html");
-		localStorage.setItem('point', numPoint)
-	})
+		$("#loading").hide();
+	}, 1500)
+	
+	localStorage.setItem('point', numPoint)
 	return numPoint;
+	}
+	
+	
+	
 	
 }) 
 
@@ -52,6 +79,7 @@ let button = document.getElementsByClassName("button");
 for (i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function(e) {
 		e.preventDefault();
+		e.target.style.color = "white";
 		e.target.style.backgroundColor = "lightcoral";
 		e.target.style.borderColor = "lightcoral";
         let getAtt = e.target.getAttribute("att");
@@ -79,3 +107,4 @@ $("#finish").click(function() {
 	localStorage.setItem("result", (bonus + Number(localStorage.getItem('point'))));
 	window.open("result.html");
 })
+
