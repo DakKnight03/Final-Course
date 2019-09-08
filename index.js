@@ -29,7 +29,7 @@ $("#button").click(function(e) {
 	} else if (name2 == undefined){
 		$("#name2").css("borderColor", "red")
 
-	} else if (age == undefined || isNaN(age)){
+	} else if (age == undefined ){
 		$("#age").css("borderColor", "red")
 
 	} else {
@@ -42,24 +42,23 @@ $("#button").click(function(e) {
 			"x-rapidapi-host": "love-calculator.p.rapidapi.com",
 			"x-rapidapi-key": "cedbb6e127msh6c3f85c77dc22c0p153d51jsn608d2ca695b6"
 		}
-	}).then((res) => {
-		console.log(res)
-		point = res.percentage;
-		console.log(typeof point);
-		numPoint = Number(point);
-		console.log(numPoint);
-		if (numPoint > 20) {
-			numPoint = 20;
+		}).then((res) => {
+			console.log(res)
+			point = res.percentage;
+			console.log(typeof point);
+			numPoint = Number(point);
 			console.log(numPoint);
-		}
-	});	
-	setTimeout(() => {
-		window.location.href = "personality.html";
-		$("#loading").hide();
-	}, 1500)
+			if (numPoint > 40) {
+				numPoint = 40;
+				console.log(numPoint);
+			}
+			localStorage.setItem('point', numPoint)
+			window.location.href = "personality.html";
+			$("#loading").hide();
+		});	
 	
-	localStorage.setItem('point', numPoint)
-	return numPoint;
+	
+	
 	}
 	
 	
@@ -93,9 +92,9 @@ for (i = 0; i < button.length; i++) {
 
 
         if (getAtt == "good") {
-			bonus += 8;
+			bonus += 6;
         } else if (getAtt == "avg") {
-			bonus += 5;
+			bonus += 3;
 		}
 		return bonus;
 	})
