@@ -100,10 +100,16 @@ for (i = 0; i < button.length; i++) {
 	})
 }
 
-$("#finish").click(function() {
+$("#finish").click(function(e) {
+	e.preventDefault();
+	$("#loading").show();
 	console.log(bonus);
 	console.log(localStorage.getItem('point'));
 	localStorage.setItem("result", (bonus + Number(localStorage.getItem('point'))));
+	
+	setTimeout(function() {
+	$("#loading").hide();
 	window.location.href = "result.html";
+	}, 1500);	
 })
 
