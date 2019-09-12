@@ -52,7 +52,7 @@ $("#button").click(function(e) {
 				numPoint = 40;
 				console.log(numPoint);
 			}
-			localStorage.setItem('point', numPoint)
+			sessionStorage.setItem('point', numPoint)
 			window.location.href = "personality.html";
 			$("#loading").hide();
 		});	
@@ -105,7 +105,7 @@ $("#finish").click(function(e) {
 	$("#loading").show();
 	console.log(bonus);
 	console.log(localStorage.getItem('point'));
-	localStorage.setItem("result", (bonus + Number(localStorage.getItem('point'))));
+	sessionStorage.setItem("result", (bonus + Number(localStorage.getItem('point'))));
 	
 	setTimeout(function() {
 	$("#loading").hide();
