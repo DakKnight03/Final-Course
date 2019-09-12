@@ -1,4 +1,4 @@
-let result = localStorage.getItem('result');
+let result = sessionStorage.getItem('result');
 const resultEl = document.getElementById('result');
 resultEl.textContent = result + '%';
 
